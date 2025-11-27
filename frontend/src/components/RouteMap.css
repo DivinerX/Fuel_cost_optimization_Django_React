@@ -1,0 +1,155 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 40px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 30px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.route-summary {
+  background: #f8f9fa;
+  padding: 20px 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.summary-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.summary-item .value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.map-legend {
+  background: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legend-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.legend-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.legend-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.legend-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+  min-height: 400px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.no-route {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.no-route button {
+  margin-top: 20px;
+  max-width: 300px;
+}
+
