@@ -5,5 +5,7 @@ geopy>=2.4.0
 requests>=2.32.0
 python-dotenv>=1.0.0
 polyline>=2.0.0
+gunicorn>=21.2.0
+uvicorn[standard]>=0.30.0
 
 
